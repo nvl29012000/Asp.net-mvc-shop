@@ -1,0 +1,100 @@
+﻿@model Model.Product
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var category = ViewBag.Category;
+}
+
+<br />
+<div>
+    <h3>@Model.Name</h3>
+    <hr />
+    <p>
+        <a href="/Admin/Product/CreateProduct" class="btn btn-primary">
+            Thêm mới
+        </a>
+    </p>
+    <table class="table table-striped table-dark">
+        <tr>
+            <td>Tên sản phẩm</td>
+            <td>@Html.DisplayFor(model => model.Name)</td>
+        </tr>
+        <tr>
+            <td>Mã sản phẩm</td>
+            <td>@Html.DisplayFor(model => model.ProductCode)</td>
+        </tr>
+        <tr>
+            <td>Tiêu đề</td>
+            <td>@Html.DisplayFor(model => model.Title)</td>
+        </tr>
+        <tr>
+            <td>Mô tả</td>
+            <td>@Html.Raw(Model.Description)</td>
+        </tr>
+        <tr>
+            <td>Ảnh</td>
+            <td><img src="@Model.Image" style="width : 150px" /></td>
+        </tr>
+        <tr>
+            <td>Ảnh chi tiết</td>
+            <td>@Html.DisplayFor(model => model.DetailImage)</td>
+        </tr>
+        <tr>
+            <td>Giá</td>
+            <td>@Html.DisplayFor(model => model.Price)</td>
+        </tr>
+        <tr>
+            <td>Giá sale</td>
+            <td>@Html.DisplayFor(model => model.SalePrice)</td>
+        </tr>
+        <tr>
+            <td>Số lượng</td>
+            <td>@Html.DisplayFor(model => model.Quantity)</td>
+        </tr>
+        <tr>
+            <td>Danh mục</td>
+            <td>@category</td>
+        </tr>
+        <tr>
+            <td>Chi tiết sản phẩm</td>
+            <td>@Html.Raw(Model.ProductDetail)</td>
+        </tr>
+        <tr>
+            <td>Ngày tạo</td>
+            <td>@Html.DisplayFor(model => model.CreatedDate)</td>
+        </tr>
+        <tr>
+            <td>Người tạo</td>
+            <td>@Html.DisplayFor(model => model.CreatedBy)</td>
+        </tr>
+        <tr>
+            <td>Ngày sửa</td>
+            <td>@Html.DisplayFor(model => model.ModifiedDate)</td>
+        </tr>
+        <tr>
+            <td>Người sửa</td>
+            <td>@Html.DisplayFor(model => model.ModifiedBy)</td>
+        </tr>
+        <tr>
+            <td>Meta Keyword</td>
+            <td>@Html.DisplayFor(model => model.MetaKeyword)</td>
+        </tr>
+        <tr>
+            <td>Meta Description</td>
+            <td>@Html.DisplayFor(model => model.MetaDescription)</td>
+        </tr>
+        <tr>
+            <td>Lượt xem</td>
+            <td>@Html.DisplayFor(model => model.Views)</td>
+        </tr>
+        <tr>
+            <td>Trạng thái</td>
+            <td><input type="checkbox" checked=@Model.Status disabled /></td>
+        </tr>
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Sửa", "EditProduct", new { id = Model.ID }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Trở về", "Product", null, new { @class = "btn btn-primary" })
+</p>

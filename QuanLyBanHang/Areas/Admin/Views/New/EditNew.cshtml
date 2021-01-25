@@ -1,0 +1,105 @@
+﻿@model Model.New
+
+@{
+    ViewBag.Title = "Sửa tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var listall = (List<Model.NewCategory>)ViewBag.Listall;
+}
+
+<br />
+<div>
+    <a href="@Url.Action("News", "New")" class="btn btn-primary"><span class="fa fa-backward"></span> Quay lại</a>
+</div>
+<br />
+<h2>Sửa tin tức</h2>
+
+<form>
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ID, new { @id = "newID" })
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-name">Name</label>
+                <input type="text" value="@Model.Name" id="new-name" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-title">Title</label>
+                <input type="text" value="@Model.Title" id="new-title" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-description">Description</label>
+                <input type="text" value="@Model.Description" id="new-description" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-image">Image</label>
+                <input type="text" id="new-image" value="@Model.Image" class="form-control" />
+                <br />
+                <a id="select-image" class="btn btn-primary">Chọn ảnh</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-moreimage">Details Image</label>
+                <input type="text" id="new-moreimage" value="@Model.DetailImage" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-category">Category</label>
+                <input list="category" value="@Model.CategoryID" id="new-category" class="form-control" />
+                <datalist id="category">
+                    @foreach (var item in listall)
+                    {
+                        <option value="@item.ID">@item.Name</option>
+                    }
+                </datalist>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-detail">Details</label>
+                <input type="text" value="@Model.NewDetail" id="new-detail" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-metakeyword">Meta Keyword</label>
+                <input type="text" value="@Model.MetaKeyword" id="new-metakeyword" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-metadescription">Meta Description</label>
+                <input type="text" value="@Model.MetaDescription" id="new-metadescription" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="new-tag">Tags</label>
+                <input type="text" value="@Model.Tag" id="new-tag" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="status">Status</label>
+                <div class="checkbox">
+                    <input type="checkbox" id="status" checked="@Model.Status" />
+                </div>
+            </div>
+        </div>
+        <p id="message" class="text-danger"></p>
+        <br />
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a href="#" class="btn btn-primary" id="EditNew" >Lưu thay đổi</a>
+            </div>
+        </div>
+    </div>
+</form>

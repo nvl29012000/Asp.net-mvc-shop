@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Model.ProductCategory>
+
+@{
+    ViewBag.Title = "Danh mục sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var listall = (List< Model.ProductCategory >) ViewBag.Category;
+}
+<br />
+<h2>Danh mục sản phẩm</h2>
+
+<p>
+    <a href="/Admin/Product/Create" class="btn btn-primary">
+        Thêm mới
+    </a>
+</p>
+<select class="btn btn-primary" id="base-product-category">
+    <option value="0">Hiển thị trên trang chủ</option>
+    <option value="-1">Tất cả danh mục</option>
+    @foreach (var cate in listall)
+    {
+        <option value="@cate.ID">@cate.Name</option>
+    }
+</select>
+<hr />
+<table class="table" id="replace-table">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                Tên danh mục sản phẩm
+            </th>
+            <th>
+                Người tạo
+            </th>
+            <th>Chi tiết</th>
+            <th>Sửa</th>
+            <th>Xóa</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr id="row-@item.ID">
+            <td class = "font-weight-bold">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td class = "font-weight-bold">
+                @Html.DisplayFor(modelItem => item.CreatedBy)
+            </td>
+            <td class = "font-weight-bold">
+                @Html.ActionLink("Chi tiết", "Details", new { id = item.ID })
+            </td>
+            <td class = "font-weight-bold">
+                @Html.ActionLink("Sửa", "Edit", new { id = item.ID })
+            </td>
+            <td class = "font-weight-bold">
+                @Ajax.ActionLink("Xóa", "Delete", new { @id = item.ID }, new AjaxOptions
+           {
+               Confirm = "Bạn có chắc chắn muốn xóa bản ghi này?",
+               OnComplete = "$('#row-" + @item.ID + "').remove()",
+               HttpMethod = "POST"
+           })
+            </td>
+        </tr>
+    }
+
+</table>

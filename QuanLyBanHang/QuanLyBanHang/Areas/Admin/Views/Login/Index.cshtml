@@ -1,0 +1,87 @@
+﻿
+@{
+    Layout = null;
+}
+@model QuanLyBanHang.Areas.Admin.Data.LoginAccount
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/Common/Assets/Admin/image/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/Common/Assets/Admin/css/bootstrap.min.css" />
+    <!--===============================================================================================-->
+    <link href="/Common/Assets/Admin/css/font-awesome.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="/Common/Assets/Admin/css/icon-font.min.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+    <link href="/Common/Assets/Admin/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="/Common/Assets/Admin/css/main.css" rel="stylesheet" type="text/css" />
+    <!--===============================================================================================-->
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <img src="~/Common/Assets/Admin/image/bg-01.jpg" class="back" />
+                <div class="login100-form-title">
+                    <span class="login100-form-title-1">
+                        Sign In
+                    </span>
+                </div>
+                @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { @class = "login100-form validate-form" }))
+                {
+                    @Html.ValidationMessage("ErrorLogin", new { @class = "text-danger" })
+                    <br />
+                    @Html.ValidationSummary(true, null)
+                    <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                        <span class="label-input100">Username</span>
+                        @Html.TextBoxFor(model => model.username,
+                                       new { @class = "form-control", @name = "username", @autoforcus = "autofocus", @required = "required", @placeholder = "Enter Username" })
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                        <span class="label-input100">Password</span>
+                        @Html.PasswordFor(model => model.password,
+                                       new { @class = "form-control", @name = "password", @required = "required", @placeholder = "Enter Password" })
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="flex-sb-m w-full p-b-30">
+                        <div class="contact100-form-checkbox">
+                            <label class="label-checkbox100">
+                                @Html.CheckBoxFor(model => model.rememberme, new { @id = "ckb1" })
+                                Remember me
+                            </label>
+                        </div>
+
+                        <div>
+                            <a href="#" class="txt1">
+                                Forgot Password?
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="/Scripts/jquery-3.5.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/Common/Assets/Admin/js/main.js"></script>
+</body>
+</html>

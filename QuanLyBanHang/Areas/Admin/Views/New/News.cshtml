@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Tin tức";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var listall = (List<Model.NewCategory>)ViewBag.New;
 }
 
 <br />
@@ -13,7 +14,15 @@
         Thêm mới
     </a>
 </p>
-<table class="table">
+<select class="btn btn-primary" id="base-new">
+    <option value="0">Tất cả tin tức</option>
+    @foreach (var news in listall)
+    {
+        <option value="@news.ID">@news.Name</option>
+    }
+</select>
+<hr />
+<table class="table" id="replace-table">
     <thead class="thead-dark">
         <tr>
             <th></th>

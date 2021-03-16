@@ -19,6 +19,11 @@ namespace DatabaseIO
         {
             return QLBHDBContext.Products.ToList();
         }
+
+        public IEnumerable<Product> ListSaleProduct()
+        {
+            return QLBHDBContext.Products.Where(x => x.SaleDate > DateTime.Now).OrderBy(x=>x.SaleDate).ToList();
+        }
         public IEnumerable<Product> listsubproduct(int ID)
         {
             if (ID == 0)
@@ -26,12 +31,17 @@ namespace DatabaseIO
             else
                 return QLBHDBContext.Products.Where(x => x.CategoryID == ID).ToList();
         }
+        public IEnumerable<Product> ListSameProduct(long? ID)
+        {
+            return QLBHDBContext.Products.Where(x=>x.CategoryID == ID).Take(6).ToList();
+        }
         public bool CreateProduct(string session, Product entity)
         {
             try
             {
                 entity.CreatedDate = DateTime.Now;
                 entity.CreatedBy = session;
+                entity.Title = StringConvert.ReplaceUnicode(entity.Name);
                 QLBHDBContext.Products.Add(entity);
                 QLBHDBContext.SaveChanges();
                 return true;
@@ -55,7 +65,6 @@ namespace DatabaseIO
                 edit.Title = entity.Title;
                 edit.Description = entity.Description;
                 edit.Image = entity.Image;
-                edit.DetailImage = entity.DetailImage;
                 edit.Price = entity.Price;
                 edit.SalePrice = entity.SalePrice;
                 edit.Quantity = entity.Quantity;
@@ -97,6 +106,8 @@ namespace DatabaseIO
         }
         public IEnumerable<ProductCategory> listsubcate(int ID)
         {
+            if (ID == -1)
+                return QLBHDBContext.ProductCategories.ToList();
             if(ID == 0)
                 return QLBHDBContext.ProductCategories.Where(x => x.ShowOnHome == true).ToList();
             else
@@ -116,6 +127,7 @@ namespace DatabaseIO
             {
                 entity.CreatedDate = DateTime.Now;
                 entity.CreatedBy = session;
+                entity.Title = StringConvert.ReplaceUnicode(entity.Name);
                 QLBHDBContext.ProductCategories.Add(entity);
                 QLBHDBContext.SaveChanges();
                 return true;

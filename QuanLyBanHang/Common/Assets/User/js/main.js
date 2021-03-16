@@ -1,5 +1,5 @@
-jQuery(document).ready(function($){
-    
+$(document).ready(function(){
+
     // jQuery sticky Menu
     
 	$(".mainmenu-area").sticky({topSpacing:0});
@@ -60,32 +60,36 @@ jQuery(document).ready(function($){
                 items:4,
             }
         }
-    });    
-    
-    
-    // Bootstrap Mobile Menu fix
-    $(".navbar-nav li a").click(function(){
-        $(".navbar-collapse").removeClass('in');
-    });    
-    
-    // jQuery Scroll effect
-    $('.navbar-nav li a, .scroll-to-up').bind('click', function(event) {
-        var $anchor = $(this);
-        var headerH = $('.header-area').outerHeight();
-        $('html, body').stop().animate({
-            scrollTop : $($anchor.attr('href')).offset().top - headerH + "px"
-        }, 1200, 'easeInOutExpo');
+    });  
 
-        event.preventDefault();
-    });    
+   
+    // Bootstrap Mobile Menu fix
+    //$(".navbar-nav li a").click(function(){
+    //    $(".navbar-collapse").removeClass('in');
+    //});    
+
+    // //jQuery Scroll effect
+    //$('.navbar-nav li a, .scroll-to-up').bind('click', function(event) {
+    //    var $anchor = $(this);
+    //    var headerH = $('.header-area').outerHeight();
+    //    $('html, body').stop().animate({
+    //        scrollTop : $($anchor.attr('href')).offset().top - headerH + "px"
+    //    }, 1200, 'easeInOutExpo');
+
+    //    event.preventDefault();
+    //});    
     
-    // Bootstrap ScrollPSY
-    $('body').scrollspy({ 
-        target: '.navbar-collapse',
-        offset: 95
-    })      
+     //Bootstrap ScrollPSY
+    //$('body').scrollspy({ 
+    //    target: '.navbar-collapse',
+    //    offset: 95
+    //})      
 });
 
+    $('.navbar-nav li a').click(function () {
+        $('.navbar-nav li').removeClass('active');
+        alert("SMT");
+    });
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

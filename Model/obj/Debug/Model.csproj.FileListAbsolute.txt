@@ -1,13 +1,12 @@
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\bin\Debug\Model.dll.config
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\bin\Debug\Model.dll
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\bin\Debug\Model.pdb
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\bin\Debug\EntityFramework.dll
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\bin\Debug\EntityFramework.SqlServer.dll
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\bin\Debug\EntityFramework.xml
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\bin\Debug\EntityFramework.SqlServer.xml
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\obj\Debug\Model.csprojAssemblyReference.cache
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\obj\Debug\Model.csproj.CopyComplete
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\obj\Debug\Model.dll
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\obj\Debug\Model.pdb
-D:\visual studio code\ASP.NET Framework\QuanLyBanHang\Model\obj\Debug\Model.sourcelink.json
+F:\Asp.net-mvc-shop\Model\bin\Debug\Model.dll.config
+F:\Asp.net-mvc-shop\Model\bin\Debug\Model.dll
+F:\Asp.net-mvc-shop\Model\bin\Debug\Model.pdb
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.dll
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.xml
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.csproj.CopyComplete
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.dll
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.pdb

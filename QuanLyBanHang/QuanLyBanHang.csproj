@@ -175,6 +175,7 @@
     <Compile Include="Common\Session\ConstaintUser.cs" />
     <Compile Include="Common\Session\LoginUser.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -190,13 +191,20 @@
     <Content Include="Common\Assets\Admin\css\Layout\volt.css" />
     <Content Include="Common\Assets\Admin\css\main.css" />
     <Content Include="Common\Assets\Admin\css\util.css" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-brands-400.svg" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-regular-400.svg" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-solid-900.svg" />
+    <Content Include="Common\Assets\Admin\fonts\fontawesome-webfont.svg" />
     <Content Include="Common\Assets\Admin\image\bg-01.jpg" />
     <Content Include="Common\Assets\Admin\image\icons\favicon.ico" />
     <Content Include="Common\Assets\Admin\image\icons\map-marker.png" />
     <Content Include="Common\Assets\Admin\js\bootstrap.bundle.min.js" />
     <Content Include="Common\Assets\Admin\js\bootstrap.esm.min.js" />
     <Content Include="Common\Assets\Admin\js\bootstrap.min.js" />
+    <Content Include="Common\Assets\Admin\js\Controller\ProductController.js" />
+    <Content Include="Common\Assets\Admin\js\Controller\UserController.js" />
     <Content Include="Common\Assets\Admin\js\main.js" />
+    <Content Include="Common\Assets\Admin\js\Controller\NewController.js" />
     <Content Include="Common\Assets\User\css\bootstrap.min.css" />
     <Content Include="Common\Assets\User\css\font-awesome.min.css" />
     <Content Include="Common\Assets\User\css\owl.carousel.css" />
@@ -1265,6 +1273,45 @@
     <Content Include="Common\Assets\User\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Common\Assets\User\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Common\Assets\User\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-brands-400.eot" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-brands-400.ttf" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-brands-400.woff" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-brands-400.woff2" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-regular-400.eot" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-regular-400.ttf" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-regular-400.woff" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-regular-400.woff2" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-solid-900.eot" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-solid-900.ttf" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-solid-900.woff" />
+    <Content Include="Common\Assets\Admin\css\webfonts\fa-solid-900.woff2" />
+    <Content Include="Common\Assets\Admin\fonts\fontawesome-webfont.eot" />
+    <Content Include="Common\Assets\Admin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\fontawesome-webfont.woff" />
+    <Content Include="Common\Assets\Admin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Common\Assets\Admin\fonts\FontAwesome.otf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Common\Assets\Admin\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="Common\Assets\Admin\css\bootstrap.min.css.map" />
+    <Content Include="Common\Assets\Admin\js\bootstrap.min.js.map" />
+    <Content Include="Common\Assets\Admin\css\Layout\volt.css.map" />
+    <Content Include="Areas\Admin\Views\New\NewReplace.cshtml" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\images\bx_loader.gif" />
     <Content Include="Scripts\images\controls.png" />
@@ -1293,11 +1340,12 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Product\Products.cshtml" />
+    <Content Include="Views\Product\ProductDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\Base\" />
-    <Folder Include="Common\Assets\Admin\fonts\" />
     <Folder Include="Image\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\ckfinder\userfiles\files\" />
@@ -1320,7 +1368,7 @@
       <Name>DatabaseIO</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{3b23b013-27ca-4471-bb28-8310fef0ddf6}</Project>
+      <Project>{4c9b051d-6971-479a-8b88-19150ee3e1c8}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>

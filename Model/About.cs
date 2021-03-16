@@ -23,9 +23,6 @@ namespace Model
         [StringLength(250)]
         public string Image { get; set; }
 
-        [Column(TypeName = "xml")]
-        public string DetailImage { get; set; }
-
         public DateTime? CreatedDate { get; set; }
 
         [StringLength(100)]

@@ -23,9 +23,6 @@ namespace Model
         [StringLength(250)]
         public string Image { get; set; }
 
-        [Column(TypeName = "xml")]
-        public string DetailImage { get; set; }
-
         public long? CategoryID { get; set; }
 
         [Column(TypeName = "ntext")]

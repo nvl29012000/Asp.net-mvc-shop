@@ -25,6 +25,7 @@ namespace DatabaseIO
             {
                 entity.CreatedDate = DateTime.Now;
                 entity.CreatedBy = session;
+                entity.Title = StringConvert.ReplaceUnicode(entity.Name);
                 QLBHDBContext.News.Add(entity);
                 QLBHDBContext.SaveChanges();
                 return true;
@@ -33,6 +34,13 @@ namespace DatabaseIO
             {
                 return false;
             }
+        }
+        public IEnumerable<New> listsubnew(int ID)
+        {
+            if (ID == 0)
+                return QLBHDBContext.News.ToList();
+            else
+                return QLBHDBContext.News.Where(x => x.CategoryID == ID).ToList();
         }
         public New FindNew(int ID)
         {
@@ -47,7 +55,6 @@ namespace DatabaseIO
                 edit.Title = entity.Title;
                 edit.Description = entity.Description;
                 edit.Image = entity.Image;
-                edit.DetailImage = entity.DetailImage;
                 edit.CategoryID = entity.CategoryID;
                 edit.NewDetail = entity.NewDetail;
                 edit.ModifiedDate = DateTime.Now;
@@ -90,6 +97,7 @@ namespace DatabaseIO
             {
                 entity.CreatedDate = DateTime.Now;
                 entity.CreatedBy = session;
+                entity.Title = StringConvert.ReplaceUnicode(entity.Name);
                 QLBHDBContext.NewCategories.Add(entity);
                 QLBHDBContext.SaveChanges();
                 return true;

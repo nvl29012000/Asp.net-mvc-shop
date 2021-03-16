@@ -46,9 +46,5 @@ namespace QuanLyBanHang.Areas.Admin.Controllers
             return View("~/Areas/Admin/Views/User/_ChangeStatus.cshtml", change);
         }
         
-        public ActionResult TestCK()
-        {
-            return View();
-        }
     }
 }

@@ -11,7 +11,8 @@ namespace QuanLyBanHang.Controllers
     {
         public ActionResult Index()
         {
-            var res = new ProductDAO().ListProduct().Take(4);
+            ViewBag.Slide = new SlideDAO().topSlide();
+            var res = new ProductDAO().ListSaleProduct();
             return View(res);
         }
     }

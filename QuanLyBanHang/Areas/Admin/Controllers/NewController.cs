@@ -90,6 +90,7 @@ namespace QuanLyBanHang.Areas.Admin.Controllers
         public ActionResult News()
         {
             var res = new NewDAO().listnew();
+            ViewBag.New = new NewDAO().listcategory();
             return View(res);
         }
         public ActionResult CreateNew()
@@ -118,6 +119,12 @@ namespace QuanLyBanHang.Areas.Admin.Controllers
                     url = Url.Action("News","New")
                 });
             }
+        }
+        [HttpPost]
+        public ActionResult ListSubNew(int ID)
+        {
+            var res = new NewDAO().listsubnew(ID);
+            return View("~/Areas/Admin/Views/New/NewReplace.cshtml", res);
         }
         public ActionResult NewDetail(int ID)
         {

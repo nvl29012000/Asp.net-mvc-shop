@@ -9,7 +9,7 @@ namespace Model
     [Table("MenuType")]
     public partial class MenuType
     {
-        public int ID { get; set; }
+        public long ID { get; set; }
 
         [StringLength(250)]
         public string Name { get; set; }

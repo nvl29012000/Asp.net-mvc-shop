@@ -26,9 +26,6 @@ namespace Model
         [StringLength(250)]
         public string Image { get; set; }
 
-        [Column(TypeName = "xml")]
-        public string DetailImage { get; set; }
-
         public decimal? Price { get; set; }
 
         public decimal? SalePrice { get; set; }

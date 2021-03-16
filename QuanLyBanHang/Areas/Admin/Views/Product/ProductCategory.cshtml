@@ -15,7 +15,8 @@
 </p>
 <select class="btn btn-primary" id="base-product-category">
     <option value="0">Hiển thị trên trang chủ</option>
-    @foreach(var cate in listall)
+    <option value="-1">Tất cả danh mục</option>
+    @foreach (var cate in listall)
     {
         <option value="@cate.ID">@cate.Name</option>
     }

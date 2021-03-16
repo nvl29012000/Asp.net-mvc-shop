@@ -1,0 +1,12 @@
+F:\Asp.net-mvc-shop\Model\bin\Debug\Model.dll.config
+F:\Asp.net-mvc-shop\Model\bin\Debug\Model.dll
+F:\Asp.net-mvc-shop\Model\bin\Debug\Model.pdb
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.dll
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.xml
+F:\Asp.net-mvc-shop\Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.csproj.CopyComplete
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.dll
+F:\Asp.net-mvc-shop\Model\obj\Debug\Model.pdb

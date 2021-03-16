@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Thêm mới";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var listall = (List<Model.ProductCategory>)ViewBag.Listall;
+}
+
+<br />
+<div>
+    <a href="@Url.Action("ProductCategory", "Product")" class="btn btn-primary"><span class="fa fa-backward"></span> Quay lại</a>
+</div>
+<br />
+<h2>Thêm mới danh mục sản phẩm</h2>
+
+<form>
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="productcategory-name">Category Name</label>
+                <input type="text" id="productcategory-name" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="productcategory-parentid">Base Category</label>
+                <input list="parentid" id="productcategory-parentid" class="form-control" />
+                <datalist id="parentid">
+                    @foreach (var item in listall)
+                    {
+                        <option value="@item.ID">@item.Name</option>
+                    }
+                </datalist>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="productcategory-order">Display Order</label>
+                <input type="number" id="productcategory-order" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="productcategory-seo">Seo Title</label>
+                <input type="text" id="productcategory-seo" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="metakeyword">Meta Keyword</label>
+                <input type="text" id="metakeyword" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="metadiscription">Meta Discription</label>
+                <input type="text" id="metadiscription" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="showonhome">Show On Home</label>
+                <div class="checkbox">
+                    <input type="checkbox" id="showonhome" checked />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label for="status">Status</label>
+                <div class="checkbox">
+                    <input type="checkbox" id="status" checked />
+                </div>
+            </div>
+        </div>
+        <p id="message" class="text-danger"></p>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a href="#" class="btn btn-primary" id="CreateProductCategory">Thêm mới</a>
+            </div>
+        </div>
+    </div>
+    <br />
+</form>
+

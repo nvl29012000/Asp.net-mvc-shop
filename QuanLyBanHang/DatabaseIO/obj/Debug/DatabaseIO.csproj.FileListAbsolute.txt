@@ -1,0 +1,48 @@
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\Model.dll
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\Model.pdb
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\Model.dll.config
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\visual studio code\ASP.NET Framework\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.sourcelink.json
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\Model.dll
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\Model.pdb
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\Model.dll.config
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.sourcelink.json
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\visual studio code\ASP.NET Framework\Asp.net-mvc-shop\QuanLyBanHang\DatabaseIO\obj\Debug\DatabaseIO.pdb
+F:\Asp.net-mvc-shop\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+F:\Asp.net-mvc-shop\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+F:\Asp.net-mvc-shop\DatabaseIO\obj\Debug\DatabaseIO.sourcelink.json
+F:\Asp.net-mvc-shop\DatabaseIO\obj\Debug\DatabaseIO.dll
+F:\Asp.net-mvc-shop\DatabaseIO\obj\Debug\DatabaseIO.pdb
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\DatabaseIO.dll
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\DatabaseIO.pdb
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\EntityFramework.dll
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\Model.dll
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\Model.pdb
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\Model.dll.config
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\EntityFramework.xml
+F:\Asp.net-mvc-shop\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+F:\Asp.net-mvc-shop\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
